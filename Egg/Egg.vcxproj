@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{C235BD63-6E30-4F13-A0FF-C5D5FCA38558}</ProjectGuid>
+    <RootNamespace>Egg</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Default.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="Cam\Base.h" />
+    <ClInclude Include="Cam\FirstPerson.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="ConstantBuffer.hpp" />
+    <ClInclude Include="d3dx12.h" />
+    <ClInclude Include="Importer.h" />
+    <ClInclude Include="Math\Bool1.h" />
+    <ClInclude Include="Math\Bool2.h" />
+    <ClInclude Include="Math\Bool2Swizzle.hpp" />
+    <ClInclude Include="Math\Bool3.h" />
+    <ClInclude Include="Math\Bool3Swizzle.hpp" />
+    <ClInclude Include="Math\Bool4.h" />
+    <ClInclude Include="Math\Bool4Swizzle.hpp" />
+    <ClInclude Include="Math\Float1.h" />
+    <ClInclude Include="Math\Float2.h" />
+    <ClInclude Include="Math\Float2Swizzle.hpp" />
+    <ClInclude Include="Math\Float3.h" />
+    <ClInclude Include="Math\Float3Swizzle.hpp" />
+    <ClInclude Include="Math\Float4.h" />
+    <ClInclude Include="Math\Float4Swizzle.hpp" />
+    <ClInclude Include="Math\Float4x4.h" />
+    <ClInclude Include="Math\Int1.h" />
+    <ClInclude Include="Math\Int2.h" />
+    <ClInclude Include="Math\Int2Swizzle.hpp" />
+    <ClInclude Include="Math\Int3.h" />
+    <ClInclude Include="Math\Int3Swizzle.hpp" />
+    <ClInclude Include="Math\Int4.h" />
+    <ClInclude Include="Math\Int4Swizzle.hpp" />
+    <ClInclude Include="Math\Math.h" />
+    <ClInclude Include="Math\UInt1.h" />
+    <ClInclude Include="Math\UInt2.h" />
+    <ClInclude Include="Math\UInt2Swizzle.hpp" />
+    <ClInclude Include="Math\UInt3.h" />
+    <ClInclude Include="Math\UInt3Swizzle.hpp" />
+    <ClInclude Include="Math\UInt4.h" />
+    <ClInclude Include="Math\UInt4Swizzle.hpp" />
+    <ClInclude Include="Mesh\Flip.h" />
+    <ClInclude Include="Mesh\Geometry.h" />
+    <ClInclude Include="Mesh\Material.h" />
+    <ClInclude Include="Mesh\Multi.h" />
+    <ClInclude Include="Mesh\Prefabs.h" />
+    <ClInclude Include="Mesh\Shaded.h" />
+    <ClInclude Include="PsoManager.h" />
+    <ClInclude Include="Scene\ConstantBufferTypes.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Scene\ControlParameters.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Scene\ControlState.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Scene\Entity.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Scene\FixedRigidBody.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Scene\ManagerApp.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Scene\PerObjectData.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Scene\RigidBody.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="SimpleApp.h" />
+    <ClInclude Include="Texture2D.h" />
+    <ClInclude Include="TextureCube.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="Vertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cam\FirstPerson.cpp" />
+    <ClCompile Include="Importer.cpp" />
+    <ClCompile Include="Internal.cpp" />
+    <ClCompile Include="Math\Bool1.cpp" />
+    <ClCompile Include="Math\Bool2.cpp" />
+    <ClCompile Include="Math\Bool3.cpp" />
+    <ClCompile Include="Math\Bool4.cpp" />
+    <ClCompile Include="Math\Float1.cpp" />
+    <ClCompile Include="Math\Float2.cpp" />
+    <ClCompile Include="Math\Float3.cpp" />
+    <ClCompile Include="Math\Float4.cpp" />
+    <ClCompile Include="Math\Float4x4.cpp" />
+    <ClCompile Include="Math\Int1.cpp" />
+    <ClCompile Include="Math\Int2.cpp" />
+    <ClCompile Include="Math\Int3.cpp" />
+    <ClCompile Include="Math\Int4.cpp" />
+    <ClCompile Include="Math\UInt1.cpp" />
+    <ClCompile Include="Math\UInt2.cpp" />
+    <ClCompile Include="Math\UInt3.cpp" />
+    <ClCompile Include="Math\UInt4.cpp" />
+    <ClCompile Include="PsoManager.cpp" />
+    <ClCompile Include="Scene\Entity.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Scene\ManagerApp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Texture2D.cpp" />
+    <ClCompile Include="TextureCube.cpp" />
+    <ClCompile Include="Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Shaders\RootSignatures.hlsli">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RootSignature</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rootsig_1.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RootSignatureTest</EntryPointName>
+      <FileType>Document</FileType>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="Scene\Entity.h.bak">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </None>
+    <None Include="Scene\StaticEntity.h.bak">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </None>
+    <None Include="Shaders\basic.hlsli" />
+    <None Include="Shaders\billboard.hlsli" />
+    <None Include="Shaders\cbBasic.hlsli" />
+    <None Include="Shaders\cbQuad.hlsli" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\bgPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Shaders\basicPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Shaders\billboardGS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Geometry</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Shaders\billboardVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Shaders\firePS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Shaders\quadVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Shaders\texturedPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Shaders\texturedVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Shaders\trafoVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
